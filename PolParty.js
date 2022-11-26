@@ -48,7 +48,7 @@ let chart5 = new Chart(radar5, {
             boarderColor: '#718C00',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
-            data: [27,17,3,11,13,6,10,7,4,3]
+            data: [27,17,4,9,12,6,10,7,3,4]
         }]
     },
     options: {
