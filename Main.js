@@ -1,8 +1,5 @@
-const radar1 = document.getElementById("chart1");
-// const radar2 = document.getElementById("chart2");
-
+const radar1 = document.getElementById("sex");
 console.log(radar1);
-// console.log(radar2);
 
 let chart1 = new Chart(radar1, {
     type: 'radar',
@@ -17,8 +14,8 @@ let chart1 = new Chart(radar1, {
             // Person Type
             label: 'Total',
             // color and width of radar
-            backgroundColor: 'rgba(15,76,92,0.1)',
-            //boarderColor: '#0f4c5c',
+            backgroundColor: 'rgba(142,144,140,0.1)',
+            //boarderColor: '#8e908c',
             boarderWidth: 3,
             // Number Values Corresponding to issue (See labels)
             data: [27,17,3,11,13,6,10,7,4,3]
@@ -27,8 +24,8 @@ let chart1 = new Chart(radar1, {
             // Person Type
             label: 'Male',
             // color and width of radar
-            backgroundColor: 'rgba(225,0,20,0.1)',
-            boarderColor: '#e36414',
+            backgroundColor: 'rgba(113,183,0,0.1)',
+            boarderColor: '#718C00',
             pointStyle: 'cross',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -38,11 +35,17 @@ let chart1 = new Chart(radar1, {
             // Person Type
             label: 'Female',
             // color and width of radar
-            backgroundColor:'rgba(154,3,255,0.1)',
-            boarderColor: '#9A031E',
+            backgroundColor:'rgba(137,89,168,0.1)',
+            boarderColor: '#5f0f40',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
             data: [26,18,2,10,14,7,9,7,4,3]
-        }]
+        }],
+    plugins: {
+            title: {
+              display: true,
+              text: 'Chart Title',
+            }
+          }
     }
 });
