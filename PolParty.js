@@ -11,63 +11,52 @@ let chart5 = new Chart(radar5, {
         // Where the data actually resides
         datasets: [
             {
-            // Person Type
+            // Total Party Type
             label: 'Total',
             // color and width of radar
             backgroundColor: 'rgba(142,144,140,0.1)',
             //boarderColor: '#8e908c',
             boarderWidth: 3,
             // Number Values Corresponding to issue (See labels)
-            data: []
+            data: [27,17,3,11,13,6,10,7,4,3]
             },
             {
-            // Person Type
-            label: 'b',
+            // First Party Type
+            label: 'Repulican',
             // color and width of radar
             backgroundColor:'rgba(154, 3, 30,0.1)',
             boarderColor: '#9A031E',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
-            data: []
+            data: [37,9,5,25,6,1,2,12,2,2]
         },
         {
-            // Person Type
-            label: 'c',
+            // Secomd Party Type
+            label: 'Democrat',
             // color and width of radar
             backgroundColor:'rgba(251, 139, 36,0.1)',
             boarderColor: '#e36414',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
-            data: []
+            data: [20,22,2,4,18,8,15,3,5,2]
         },
         {
-            // Person Type
-            label: 'd',
+            // Last Party Type(s)
+            label: 'Independent/Other',
             // color and width of radar
             backgroundColor:'rgba(113, 140, 0,0.1)',
             boarderColor: '#718C00',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
-            data: []
-        },{
-            // Person Type
-            label: 'e',
-            // color and width of radar
-            backgroundColor:'rgba(15, 76, 92,0.1)',
-            boarderColor: '#0f4c5c',
-            boarderwidth: 2,
-            // Number Values Corresponding to issue (See labels)
-            data: []
-        },{
-            // Person Type
-            label: 'a',
-            // color and width of radar
-            backgroundColor: 'rgba(137, 89, 168,0.1)',
-            boarderColor: '#5f0f40',
-            pointStyle: 'cross',
-            boarderwidth: 2,
-            // Number Values Corresponding to issue (See labels)
-            data: []
+            data: [27,17,3,11,13,6,10,7,4,3]
         }]
+    },
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: 'Party Identification'
+            }
+        }
     }
 });
