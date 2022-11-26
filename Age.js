@@ -70,5 +70,13 @@ let chart2 = new Chart(radar2, {
             // Number Values Corresponding to issue (See labels)
             data: [17,9,0,2,13,23,13,3,13,7]
         }]
+    },
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: 'Age'
+            }
+        }
     }
 });
