@@ -40,11 +40,13 @@ let chart1 = new Chart(radar1, {
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
             data: [26,18,2,10,14,7,9,7,4,3]
-        }],
-    plugins: {
+        }]
+    },
+    options:{
+        plugins: {
             title: {
               display: true,
-              text: 'Chart Title',
+              text: 'Gender',
             }
           }
     }
