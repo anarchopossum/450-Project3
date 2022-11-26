@@ -40,7 +40,7 @@ let chart3 = new Chart(radar3, {
             data: [30,14,4,11,13,5,8,8,4,3]
         },
         {
-            // Person Type
+            // wealth Type
             label: '$100,000-$149,999',
             // color and width of radar
             backgroundColor:'rgba(113, 140, 0,0.1)',
@@ -49,7 +49,7 @@ let chart3 = new Chart(radar3, {
             // Number Values Corresponding to issue (See labels)
             data: [30,17,4,11,11,5,11,5,5,3]
         },{
-            // Person Type
+            // wealth Type
             label: '$150,000-$199,999',
             // color and width of radar
             backgroundColor:'rgba(15, 76, 92,0.1)',
@@ -58,7 +58,7 @@ let chart3 = new Chart(radar3, {
             // Number Values Corresponding to issue (See labels)
             data: [27,24,2,7,8,2,10,14,3,3]
         },{
-            // Person Type
+            // wealth Type
             label: '$200,000+',
             // color and width of radar
             backgroundColor: 'rgba(137, 89, 168,0.1)',
