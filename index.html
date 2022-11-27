@@ -13,35 +13,81 @@
 <style>
 h1 {text-align: center;}
 p {text-align: center;}
-div {text-align: center;}
+/* div {text-align: center;} */
+
+html {
+  background-color: #1c687e;
+  display: flex;
+  justify-content: center;
+}
+select {
+            position: relative;
+            padding: auto;
+            text-align: center;
+        }
+body{
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 10px 5px #080809;
+  display: flex;
+  border-radius: 9px;
+  padding: 2em;
+}
 </style>
 </head>
     
 <body>
     <h1 style="font-size:30px;">What Issues Matter the Most to Which Americans</h1>
+    <!-- DropDown Menu -->
+    <select id="choose" onchange="myFunction(this.options[this.selectedIndex].value);"> 
+      <option value="gender">Gender</option>
+      <option value="age">Age</option>
+      <option value="income">Income</option>
+      <option value="region">Region</option>
+      <option value="party">Party</option>
+  </select>
   <!-- EACH CANVAS(GRAPH) HAS IT'S OWN DIVIDER-->
-  <div style="height:600px; width: 600px">
+  <div class="gender" id="gender" style="height:600px; width: 600px">
     <canvas id="sex" height="300" width="300"></canvas>
   </div>
-  <div style="height: 600px; width: 600px;">
+  <div class="age" id="age" style="height: 600px; width: 600px;">
     <canvas id="age" height="300" width="300"></canvas>
   </div>
-  <div style="height: 600px; width: 600px;">
+  <div class="income" id="income" style="height: 600px; width: 600px;">
     <canvas id="wealth" height="300" width="300"></canvas>
   </div>
-  <div style="height: 600px; width: 600px;">
+  <div class="region" id="region" style="height: 600px; width: 600px;">
     <canvas id="location" height="300" width="300"></canvas>
   </div>
-  <div style="height: 600px; width: 600px;">
+  <div class="party"; id="party"; style="height: 600px; width: 600px;">
     <canvas id="politics" height="300" width="300"></canvas>
   </div>
   <!--Imports-->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="Main.js"></script> <!--SEX-->
-  <script src="Age.js"></script> // <!--AGE-->
+  <script src="Age.js"></script> <!--AGE-->
   <script src="Wealth.js"></script> <!--WEALTH-->
-  <script src="Location.js"></script> // <!--LOCATION-->
+  <script src="Location.js"></script> <!--LOCATION-->
   <script src="PolParty.js"></script> <!--POLITICAL PARTY-->
+
+  <script>
+    document.getElementById("gender").style.display = "block";
+    document.getElementById("age").style.display = "none";
+    document.getElementById("income").style.display = "none";
+    document.getElementById("region").style.display = "none";
+    document.getElementById("party").style.display = "none";
+  
+    function myFunction(c) 
+    {
+    document.getElementById("gender").style.display = "none";
+    document.getElementById("age").style.display = "none";
+    document.getElementById("income").style.display = "none";
+    document.getElementById("region").style.display = "none";
+    document.getElementById("party").style.display = "none";
+    document.getElementById(c).style.display = "block";
+    }
+</script>
 </body>
 
 </html>

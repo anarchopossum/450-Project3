@@ -13,7 +13,7 @@ let chart3 = new Chart(radar3, {
             {
             label: 'Total',
             // color and width of radar
-            backgroundColor: 'rgba(142,144,140,0.1)',
+            backgroundColor: 'rgba(142,144,140,0.2)',
             //boarderColor: '#8e908c',
             boarderWidth: 3,
             // Number Values Corresponding to issue (See labels)
@@ -23,7 +23,7 @@ let chart3 = new Chart(radar3, {
             // wealth Type
             label: '$0-$49,9999',
             // color and width of radar
-            backgroundColor:'rgba(154, 3, 30,0.1)',
+            backgroundColor:'rgba(154, 3, 30,0.2)',
             boarderColor: '#9A031E',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -33,7 +33,7 @@ let chart3 = new Chart(radar3, {
             // wealth Type
             label: '$50,000-$99,999',
             // color and width of radar
-            backgroundColor:'rgba(251, 139, 36,0.1)',
+            backgroundColor:'rgba(251, 139, 36,0.2)',
             boarderColor: '#e36414',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -43,7 +43,7 @@ let chart3 = new Chart(radar3, {
             // wealth Type
             label: '$100,000-$149,999',
             // color and width of radar
-            backgroundColor:'rgba(113, 140, 0,0.1)',
+            backgroundColor:'rgba(113, 140, 0,0.2)',
             boarderColor: '#718C00',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -52,7 +52,7 @@ let chart3 = new Chart(radar3, {
             // wealth Type
             label: '$150,000-$199,999',
             // color and width of radar
-            backgroundColor:'rgba(15, 76, 92,0.1)',
+            backgroundColor:'rgba(15, 76, 92,0.2)',
             boarderColor: '#0f4c5c',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -61,7 +61,7 @@ let chart3 = new Chart(radar3, {
             // wealth Type
             label: '$200,000+',
             // color and width of radar
-            backgroundColor: 'rgba(137, 89, 168,0.1)',
+            backgroundColor: 'rgba(137, 89, 168,0.2)',
             boarderColor: '#5f0f40',
             pointStyle: 'cross',
             boarderwidth: 2,

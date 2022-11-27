@@ -14,7 +14,7 @@ let chart5 = new Chart(radar5, {
             // Total Party Type
             label: 'Total',
             // color and width of radar
-            backgroundColor: 'rgba(142,144,140,0.1)',
+            backgroundColor: 'rgba(142,144,140,0.2)',
             //boarderColor: '#8e908c',
             boarderWidth: 3,
             // Number Values Corresponding to issue (See labels)
@@ -24,7 +24,7 @@ let chart5 = new Chart(radar5, {
             // First Party Type
             label: 'Repulican',
             // color and width of radar
-            backgroundColor:'rgba(154, 3, 30,0.1)',
+            backgroundColor:'rgba(154, 3, 30,0.2)',
             boarderColor: '#9A031E',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -34,7 +34,7 @@ let chart5 = new Chart(radar5, {
             // Secomd Party Type
             label: 'Democrat',
             // color and width of radar
-            backgroundColor:'rgba(251, 139, 36,0.1)',
+            backgroundColor:'rgba(251, 139, 36,0.2)',
             boarderColor: '#e36414',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
@@ -44,7 +44,7 @@ let chart5 = new Chart(radar5, {
             // Last Party Type(s)
             label: 'Independent/Other',
             // color and width of radar
-            backgroundColor:'rgba(113, 140, 0,0.1)',
+            backgroundColor:'rgba(113, 140, 0,0.2)',
             boarderColor: '#718C00',
             boarderwidth: 2,
             // Number Values Corresponding to issue (See labels)
