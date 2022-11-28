@@ -1,4 +1,4 @@
-const radar2 = document.getElementById("age");
+const radar2 = document.getElementById("oldness");
 console.log(radar2);
 
 let chart2 = new Chart(radar2, {
