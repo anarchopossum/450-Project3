@@ -75,8 +75,16 @@ let chart2 = new Chart(radar2, {
         plugins: {
             title: {
                 display: true,
-                text: 'Age'
+                text: 'Age',
+
+            },
+            tooltip: {
+                callbacks: {
+                    label: (item) =>
+                        `${item.dataset.label}: ${item.formattedValue} %`,
+                },
             }
         }
+        
     }
 });
