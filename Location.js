@@ -73,8 +73,16 @@ let chart4 = new Chart(radar4, {
         plugins: {
             title: {
                 display: true,
-                text: 'Region'
+                text: 'Location',
+
+            },
+            tooltip: {
+                callbacks: {
+                    label: (item) =>
+                        `${item.dataset.label}: ${item.formattedValue} %`,
+                },
             }
         }
+        
     }
 });

@@ -73,8 +73,16 @@ let chart3 = new Chart(radar3, {
         plugins: {
             title: {
                 display: true,
-                text: 'Household Income'
+                text: 'Household Income',
+
+            },
+            tooltip: {
+                callbacks: {
+                    label: (item) =>
+                        `${item.dataset.label}: ${item.formattedValue} %`,
+                },
             }
         }
+        
     }
 });

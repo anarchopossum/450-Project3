@@ -42,12 +42,20 @@ let chart1 = new Chart(radar1, {
             data: [26,18,2,10,14,7,9,7,4,3]
         }]
     },
-    options:{
+    options: {
         plugins: {
             title: {
-              display: true,
-              text: 'Gender',
+                display: true,
+                text: 'Gender',
+
+            },
+            tooltip: {
+                callbacks: {
+                    label: (item) =>
+                        `${item.dataset.label}: ${item.formattedValue} %`,
+                },
             }
-          }
+        }
+        
     }
 });

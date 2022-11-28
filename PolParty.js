@@ -55,8 +55,16 @@ let chart5 = new Chart(radar5, {
         plugins: {
             title: {
                 display: true,
-                text: 'Party Identification'
+                text: 'Party Identification',
+
+            },
+            tooltip: {
+                callbacks: {
+                    label: (item) =>
+                        `${item.dataset.label}: ${item.formattedValue} %`,
+                },
             }
         }
+        
     }
 });
