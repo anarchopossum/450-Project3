@@ -17,7 +17,13 @@ h1 {
   font-size:25px;
   color: #0c5063;
 }
-p {text-align: center;}
+
+p {
+  margin-left: 7%;
+  text-align: justify;
+  justify-content: center;
+  inline-size: 500px;
+}
 /* div {text-align: center;} */
 
 html {
@@ -31,10 +37,12 @@ select {
   justify-content: center;
   background: #1e819c;
   flex: 1;
-  color: black;
+  color: white;
   cursor:pointer;
   text-align: center;
 }
+
+
 
 body{
   background-color: white;
@@ -82,9 +90,13 @@ select::-ms-expand {
 
 </style>
 </head>
-    
 <body>
     <h1>What Issues Matter the Most to Which Americans</h1>
+    <p>Below you can see which demographics find which topics to be the most important to them in 2021. Participants can reply whether a certain topic is important with a yes/no answer.</p>
+    <hr style="width:90%;">
+    <p><b>Disclaimer</b>: To make the viewing of each graph easier for the user, The charts are scaled to the data's relative percentile. Meaning instead of showing the maximum range that being 100%, The chart zooms in according to the highest percentile.</p>
+    <hr style="width:90%;">
+
     <!-- DropDown Menu -->
     <div class="select">
       <select id="choose" onchange="myFunction(this.options[this.selectedIndex].value);"> 
@@ -113,7 +125,7 @@ select::-ms-expand {
   </div>
   <!--Imports-->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="Main.js"></script> <!--SEX-->
+  <script src="Main.js"></script> <!--GENDER-->
   <script src="Age.js"></script> <!--AGE-->
   <script src="Wealth.js"></script> <!--WEALTH-->
   <script src="Location.js"></script> <!--LOCATION-->

@@ -15,8 +15,11 @@ let chart5 = new Chart(radar5, {
             label: 'Total',
             // color and width of radar
             backgroundColor: 'rgba(142,144,140,0.2)',
-            //boarderColor: '#8e908c',
-            boarderWidth: 3,
+            borderColor: '#8e908c',
+            pointHoverBackgroundColor: '#fff',
+            pointBorderColor: '#fff',
+            pointHoverBorderColor: '#8e908c',
+            borderWidth: 1,
             // Number Values Corresponding to issue (See labels)
             data: [27,17,3,11,13,6,10,7,4,3]
             },
@@ -25,8 +28,11 @@ let chart5 = new Chart(radar5, {
             label: 'Repulican',
             // color and width of radar
             backgroundColor:'rgba(154, 3, 30,0.2)',
-            boarderColor: '#9A031E',
-            boarderwidth: 2,
+            borderColor: '#9A031E',
+            pointHoverBackgroundColor: '#fff',
+            pointBorderColor: '#fff',
+            pointHoverBorderColor: '#9A031E',
+            borderwidth: 2,
             // Number Values Corresponding to issue (See labels)
             data: [37,9,5,25,6,1,2,12,2,2]
         },
@@ -35,8 +41,11 @@ let chart5 = new Chart(radar5, {
             label: 'Democrat',
             // color and width of radar
             backgroundColor:'rgba(251, 139, 36,0.2)',
-            boarderColor: '#e36414',
-            boarderwidth: 2,
+            borderColor: '#e36414',
+            pointHoverBackgroundColor: '#fff',
+            pointBorderColor: '#fff',
+            pointHoverBorderColor: '#e36414',
+            borderwidth: 2,
             // Number Values Corresponding to issue (See labels)
             data: [20,22,2,4,18,8,15,3,5,2]
         },
@@ -45,8 +54,11 @@ let chart5 = new Chart(radar5, {
             label: 'Independent/Other',
             // color and width of radar
             backgroundColor:'rgba(113, 140, 0,0.2)',
-            boarderColor: '#718C00',
-            boarderwidth: 2,
+            borderColor: '#718C00',
+            pointHoverBackgroundColor: '#fff',
+            pointBorderColor: '#fff',
+            pointHoverBorderColor: '#718C00',
+            borderwidth: 2,
             // Number Values Corresponding to issue (See labels)
             data: [27,17,4,9,12,6,10,7,3,4]
         }]
